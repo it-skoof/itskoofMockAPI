@@ -1,5 +1,41 @@
 {
    "mockAPI": {
-      "name": "SOME-NAME"
-   }
+      "name": "it-skoof"
+   },
+   "tasks": [
+      {
+         "id": "RR-1",
+         "title": "Задача 1",
+         "desc": "Given an array of asynchronous functions functions, return a new promise promise. Each function in the array accepts no arguments and returns a promise. All the promises should be executed in parallel.",
+         "status": "Open",
+         "assigneID": 1,
+         "reporterID": 2,
+         "date_create": "2025-02-21";
+         "priority": "high";
+      },
+      {
+         "id": "RR-2",
+         "title": "Задача 2",
+         "desc": "Please solve it without the built-in Array.flat method.",
+         "status": "Resolved",
+         "assigneID": 2,
+         "reporterID": 3,
+         "date_create": "2025-05-01";
+         "priority": "low";
+      }
+   ],
+    "employees": [
+       {
+          "id": 1,
+          "name": "Тестов Тест Тестович"
+       },
+       {
+          "id": 2,
+          "name": "Иван Иванов Иванович"
+       },
+       {
+          "id": 3,
+          "name": "Светлова Светлана Ивановна"
+       }
+    ]
 }
