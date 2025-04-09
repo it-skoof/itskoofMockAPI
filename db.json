@@ -37,5 +37,17 @@
           "id": 3,
           "name": "Светлова Светлана Ивановна"
        }
-    ]
+    ],
+   "notify": [
+      {
+         "isRead": true,
+         "message": "Задача RR-2 создана",
+         "date_create": "2025-05-01"
+      },
+      {
+         "isRead": true,
+         "message": "Задача RR-1 создана",
+         "date_create": "2025-02-21"
+      }
+   ]
 }
