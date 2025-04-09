@@ -10,8 +10,8 @@
          "status": "Open",
          "assigneID": 1,
          "reporterID": 2,
-         "date_create": "2025-02-21";
-         "priority": "high";
+         "date_create": "2025-02-21",
+         "priority": "high"
       },
       {
          "id": "RR-2",
@@ -20,8 +20,8 @@
          "status": "Resolved",
          "assigneID": 2,
          "reporterID": 3,
-         "date_create": "2025-05-01";
-         "priority": "low";
+         "date_create": "2025-05-01",
+         "priority": "low"
       }
    ],
     "employees": [
