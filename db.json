@@ -1,7 +1,4 @@
 {
-   "mockAPI": {
-      "name": "it-skoof"
-   },
    "tasks": [
       {
          "id": "RR-1",
@@ -49,5 +46,13 @@
          "message": "Задача RR-1 создана",
          "date_create": "2025-02-21"
       }
-   ]
+   ],
+   "summary-tasks": {
+      "resolved": 1200,
+      "open": 100,
+      "closed": 200,
+      "On Review": 15,
+      "In Proccess": 115
+   },
+   "authorAPI": "it-skoof"
 }
