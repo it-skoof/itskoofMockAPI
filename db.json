@@ -48,9 +48,9 @@
       }
    ],
    "summaryTasks": {
-      "resolved": 1200,
-      "open": 100,
-      "closed": 200,
+      "Resolved": 1200,
+      "Open": 100,
+      "Closed": 200,
       "On Review": 15,
       "In Proccess": 115
    }
