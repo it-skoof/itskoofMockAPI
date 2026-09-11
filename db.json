@@ -1,97 +1,274 @@
 {
-   "tasks": [
-      {
-         "id": "RR-1",
-         "title": "Задача 1",
-         "desc": "Given an array of asynchronous functions functions, return a new promise promise. Each function in the array accepts no arguments and returns a promise. All the promises should be executed in parallel.",
-         "status": "Open",
-         "assigne": "Тестов Тест Тестович",
-         "reporter": "Иван Иванов Иванович",
-         "date_create": "2025-02-21",
-         "priority": "high"
-      },
-      {
-         "id": "RR-2",
-         "title": "Задача 2",
-         "desc": "Please solve it without the built-in Array.flat method.",
-         "status": "Resolved",
-         "assigne": "Иван Иванов Иванович",
-         "reporter": "Светлова Светлана Ивановна",
-         "date_create": "2025-05-01",
-         "priority": "low"
-      },
-      {
-         "id": "RR-3",
-         "title": "Задача 3",
-         "desc": "Please solve it without the built-in Array.flat method.",
-         "status": "In Proccess",
-         "assigne": "Иван Иванов Иванович",
-         "reporter": "Светлова Светлана Ивановна",
-         "date_create": "2025-09-23",
-         "priority": "low"
-      },
-      {
-         "id": "RR-4",
-         "title": "Задача 4",
-         "desc": "Please solve it without the built-in Array.flat method.",
-         "status": "In Proccess",
-         "assigne": "Иван Иванов Иванович",
-         "reporter": "Светлова Светлана Ивановна",
-         "date_create": "2025-05-14",
-         "priority": "middle"
-      },
-      {
-         "id": "RR-5",
-         "title": "Задача 5",
-         "desc": "Please solve it without the built-in Array.flat method.",
-         "status": "In Proccess",
-         "assigne": "Иван Иванов Иванович",
-         "reporter": "Светлова Светлана Ивановна",
-         "date_create": "2025-03-11",
-         "priority": "low"
-      },
-      {
-         "id": "RR-6",
-         "title": "Задача 6",
-         "desc": "Please solve it without the built-in Array.flat method.",
-         "status": "In Proccess",
-         "assigne": "Иван Иванов Иванович",
-         "reporter": "Светлова Светлана Ивановна",
-         "date_create": "2025-09-04",
-         "priority": "high"
-      }
-   ],
-    "employees": [
-       {
-          "id": 1,
-          "name": "Тестов Тест Тестович"
-       },
-       {
-          "id": 2,
-          "name": "Иван Иванов Иванович"
-       },
-       {
-          "id": 3,
-          "name": "Светлова Светлана Ивановна"
-       }
-    ],
-   "notify": [
-      {
-         "isRead": false,
-         "message": "Задача RR-2 создана",
-         "date_create": "2025-05-01"
-      },
-      {
-         "isRead": false,
-         "message": "Задача RR-1 создана",
-         "date_create": "2025-02-21"
-      }
-   ],
-   "summaryTasks": {
-      "Resolved": 1200,
-      "Open": 100,
-      "Closed": 200,
-      "On Review": 15,
-      "In Proccess": 115
-   }
+   "users": [
+  {
+    "id": 1,
+    "name": "Иван Петров",
+    "username": "ivan.petrov",
+    "email": "ivan.petrov@example.com",
+    "avatar": "/avatars/avatar-1.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Анна Смирнова",
+    "username": "anna.smirnova",
+    "email": "anna.smirnova@example.com",
+    "avatar": "/avatars/avatar-2.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Максим Иванов",
+    "username": "max.ivanov",
+    "email": "max.ivanov@example.com",
+    "avatar": "/avatars/avatar-3.jpg",
+    "role": "admin",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name": "Елена Кузнецова",
+    "username": "elena.kuz",
+    "email": "elena.kuz@example.com",
+    "avatar": "/avatars/avatar-4.jpg",
+    "role": "user",
+    "status": "inactive"
+  },
+  {
+    "id": 5,
+    "name": "Дмитрий Соколов",
+    "username": "dmitry.sokolov",
+    "email": "dmitry.sokolov@example.com",
+    "avatar": "/avatars/avatar-5.jpg",
+    "role": "moderator",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "name": "Ольга Попова",
+    "username": "olga.popova",
+    "email": "olga.popova@example.com",
+    "avatar": "/avatars/avatar-6.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "name": "Алексей Васильев",
+    "username": "alex.vasiliev",
+    "email": "alex.vasiliev@example.com",
+    "avatar": "/avatars/avatar-7.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "name": "Мария Волкова",
+    "username": "maria.volkova",
+    "email": "maria.volkova@example.com",
+    "avatar": "/avatars/avatar-8.jpg",
+    "role": "user",
+    "status": "inactive"
+  },
+  {
+    "id": 9,
+    "name": "Сергей Федоров",
+    "username": "sergey.fedorov",
+    "email": "sergey.fedorov@example.com",
+    "avatar": "/avatars/avatar-9.jpg",
+    "role": "moderator",
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "name": "Наталья Морозова",
+    "username": "nataly.morozova",
+    "email": "nataly.morozova@example.com",
+    "avatar": "/avatars/avatar-10.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "name": "Артём Новиков",
+    "username": "artem.novikov",
+    "email": "artem.novikov@example.com",
+    "avatar": "/avatars/avatar-11.jpg",
+    "role": "user",
+    "status": "blocked"
+  },
+  {
+    "id": 12,
+    "name": "Виктория Павлова",
+    "username": "vika.pavlova",
+    "email": "vika.pavlova@example.com",
+    "avatar": "/avatars/avatar-12.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 13,
+    "name": "Роман Козлов",
+    "username": "roman.kozlov",
+    "email": "roman.kozlov@example.com",
+    "avatar": "/avatars/avatar-13.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name": "София Лебедева",
+    "username": "sofia.lebedeva",
+    "email": "sofia.lebedeva@example.com",
+    "avatar": "/avatars/avatar-14.jpg",
+    "role": "admin",
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "name": "Михаил Орлов",
+    "username": "mikhail.orlov",
+    "email": "mikhail.orlov@example.com",
+    "avatar": "/avatars/avatar-15.jpg",
+    "role": "user",
+    "status": "inactive"
+  },
+  {
+    "id": 16,
+    "name": "Дарья Тихонова",
+    "username": "daria.tikhonova",
+    "email": "daria.tikhonova@example.com",
+    "avatar": "/avatars/avatar-16.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 17,
+    "name": "Никита Захаров",
+    "username": "nikita.zakharov",
+    "email": "nikita.zakharov@example.com",
+    "avatar": "/avatars/avatar-17.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 18,
+    "name": "Алина Белова",
+    "username": "alina.belova",
+    "email": "alina.belova@example.com",
+    "avatar": "/avatars/avatar-18.jpg",
+    "role": "moderator",
+    "status": "active"
+  },
+  {
+    "id": 19,
+    "name": "Павел Григорьев",
+    "username": "pavel.grigoriev",
+    "email": "pavel.grigoriev@example.com",
+    "avatar": "/avatars/avatar-19.jpg",
+    "role": "user",
+    "status": "blocked"
+  },
+  {
+    "id": 20,
+    "name": "Ксения Андреева",
+    "username": "ksenia.andreeva",
+    "email": "ksenia.andreeva@example.com",
+    "avatar": "/avatars/avatar-20.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 21,
+    "name": "Илья Макаров",
+    "username": "ilya.makarov",
+    "email": "ilya.makarov@example.com",
+    "avatar": "/avatars/avatar-21.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 22,
+    "name": "Вероника Захарова",
+    "username": "veronika.z",
+    "email": "veronika.z@example.com",
+    "avatar": "/avatars/avatar-22.jpg",
+    "role": "user",
+    "status": "inactive"
+  },
+  {
+    "id": 23,
+    "name": "Денис Егоров",
+    "username": "denis.egorov",
+    "email": "denis.egorov@example.com",
+    "avatar": "/avatars/avatar-23.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 24,
+    "name": "Полина Воронова",
+    "username": "polina.voronova",
+    "email": "polina.voronova@example.com",
+    "avatar": "/avatars/avatar-24.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 25,
+    "name": "Константин Романов",
+    "username": "konstantin.romanov",
+    "email": "konstantin.romanov@example.com",
+    "avatar": "/avatars/avatar-25.jpg",
+    "role": "moderator",
+    "status": "active"
+  },
+  {
+    "id": 26,
+    "name": "Екатерина Николаева",
+    "username": "ekaterina.nik",
+    "email": "ekaterina.nik@example.com",
+    "avatar": "/avatars/avatar-26.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 27,
+    "name": "Владислав Королев",
+    "username": "vlad.korolev",
+    "email": "vlad.korolev@example.com",
+    "avatar": "/avatars/avatar-27.jpg",
+    "role": "user",
+    "status": "blocked"
+  },
+  {
+    "id": 28,
+    "name": "Анастасия Мельникова",
+    "username": "anastasia.mel",
+    "email": "anastasia.mel@example.com",
+    "avatar": "/avatars/avatar-28.jpg",
+    "role": "user",
+    "status": "active"
+  },
+  {
+    "id": 29,
+    "name": "Тимур Куликов",
+    "username": "timur.kulikov",
+    "email": "timur.kulikov@example.com",
+    "avatar": "/avatars/avatar-29.jpg",
+    "role": "user",
+    "status": "inactive"
+  },
+  {
+    "id": 30,
+    "name": "Лиза Громова",
+    "username": "liza.gromova",
+    "email": "liza.gromova@example.com",
+    "avatar": "/avatars/avatar-30.jpg",
+    "role": "admin",
+    "status": "active"
+  }
+]
 }
